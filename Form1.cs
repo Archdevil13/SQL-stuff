@@ -22,6 +22,7 @@ namespace Create_SQL_Database_button
         private void btnCreateDatabase_Click(object sender, EventArgs e)
         {
             String str;
+            //Change Server Name if needed
             SqlConnection myConn = new SqlConnection("Server=USER-PC;Integrated security=SSPI;database=master");
             //change DB Name and other names
             str = "CREATE DATABASE TolioDB ON PRIMARY " +
